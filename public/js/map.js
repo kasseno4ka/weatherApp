@@ -51,17 +51,24 @@ function onMapClick(e) {
 
             weatherContainer.innerHTML = `
             <h2>Weather Information</h2>
-            <p>Coordinates: <br> ${data.coordinates.lon} ${data.coordinates.lat} </p>
-            <p>Address: ${data.address} </p>
-            <p>Temperature: ${data.temperature - 273} C</p>
-            <img src="${iconUrl}" alt="Weather Icon" />
-            <p>Feels like: ${data.feelsLike - 273}</p>
-            <p>Humidity: ${data.humidity} </p>
-            <p>Pressure: ${data.pressure}</p>
-            <p>Wind Speed: ${data.windSpeed}</p>
-            <p>Country code: ${data.countryCode}</p>
-            <p>Rain volume for last 3 hours: ${data.rainVolumeLast3Hours}</p>
-            <p>Description: ${data.description}</p>
+            <p><strong>Coordinates:</strong> <br> ${data.coordinates.lon} ${data.coordinates.lat} </p>
+            <p><strong>Address:</strong> ${data.address} </p>
+            <p><strong>Temperature:</strong> ${data.temperature - 273} C</p>
+            <img src="${iconUrl}" alt="Weather Icon" style="border: 2px solid black;" />
+            <p><strong>Feels like:</strong> ${data.feelsLike - 273}</p>
+            <p><strong>Humidity:</strong> ${data.humidity}% </p>
+            <p><strong>Pressure:</strong> ${data.pressure} hPa</p>
+            <p><strong>Wind Speed:</strong> ${data.windSpeed} m/s</p>
+            <p><strong>Country code:</strong> ${data.countryCode}</p>
+            <p><strong>Rain volume for last 3 hours:</strong> ${data.rainVolumeLast3Hours}</p>
+            <p><strong>Description:</strong> ${data.description}</p>
+            <div id="additionalInfo" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 10px;">
+                <p style="border-bottom: 1px solid #ccc;"><strong>Cloud:</strong> ${data.cloud}%</p>
+                <p style="border-bottom: 1px solid #ccc;"><strong>Visibility:</strong> ${data.visibility}m</p>
+                <p><strong>Gust Speed:</strong> ${data.gustSpeed}m/s</p>
+            </div>
+        
+
           `;
         })
         .catch(error => console.error('Error fetching data:', error));
