@@ -1,0 +1,63 @@
+body, h1, h2, p, div, footer, header, main {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333; /* Изменяем цвет хедера на пастельный голубой */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex; /* Добавляем flex-контейнер для основного содержимого */
+}
+
+.container {
+    display: flex; /* Добавляем flex-контейнер для вложенных элементов */
+    flex-grow: 1; /* Растягиваем контейнер на всю доступную ширину */
+}
+
+#map {
+    flex-grow: 1; /* Растягиваем карту на всю доступную ширину */
+    height: 500px; /* Увеличиваем высоту карты */
+    margin-right: 20px; /* Добавляем отступ справа для карты */
+}
+
+#weather-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    flex-basis: 50%; /* Устанавливаем начальную ширину информации о погоде */
+    font-family: Arial, sans-serif; /* Изменяем шрифт текста в разделе Weather Information */
+}
+
+.bold {
+    font-weight: bold; /* Делаем текст жирным */
+}
+
+footer {
+    background-color: #333; /* Изменяем цвет фона футера */
+    color: #fff; /* Изменяем цвет текста футера */
+    text-align: left; /* Выравниваем текст по левому краю */
+    padding: 1rem 20px; /* Добавляем отступы внутри футера */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 600px) {
+    #map {
+        height: 250px;
+    }
+}
