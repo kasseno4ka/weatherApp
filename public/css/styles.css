@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #333; /* Изменяем цвет хедера на пастельный голубой */
+    background-color: #333; 
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -19,37 +19,37 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    display: flex; /* Добавляем flex-контейнер для основного содержимого */
+    display: flex; 
 }
 
 .container {
-    display: flex; /* Добавляем flex-контейнер для вложенных элементов */
-    flex-grow: 1; /* Растягиваем контейнер на всю доступную ширину */
+    display: flex;
+    flex-grow: 1; 
 }
 
 #map {
-    flex-grow: 1; /* Растягиваем карту на всю доступную ширину */
-    height: 500px; /* Увеличиваем высоту карты */
-    margin-right: 20px; /* Добавляем отступ справа для карты */
+    flex-grow: 1; 
+    height: 500px;
+    margin-right: 20px; 
 }
 
 #weather-container {
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 5px;
-    flex-basis: 50%; /* Устанавливаем начальную ширину информации о погоде */
-    font-family: Arial, sans-serif; /* Изменяем шрифт текста в разделе Weather Information */
+    flex-basis: 50%; 
+    font-family: Arial, sans-serif; 
 }
 
 .bold {
-    font-weight: bold; /* Делаем текст жирным */
+    font-weight: bold;
 }
 
 footer {
-    background-color: #333; /* Изменяем цвет фона футера */
-    color: #fff; /* Изменяем цвет текста футера */
-    text-align: left; /* Выравниваем текст по левому краю */
-    padding: 1rem 20px; /* Добавляем отступы внутри футера */
+    background-color: #333; 
+    color: #fff;
+    text-align: left; 
+    padding: 1rem 20px;
     position: fixed;
     bottom: 0;
     width: 100%;
